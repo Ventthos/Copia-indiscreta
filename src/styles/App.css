@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ReemKufi-Regular'), url('../assets/fonts/ReemKufi-Regular.ttf') format('truetype');
+}
+
+
+:root{
+  --mainColor: #2FC572;
+  --mainColorLighten: #59d18e;
+  --mainColorLighter: #97e2b9;
+  --light-green: #99FFC7;
+  --background-creme: #fefff2;
+  --gris-oscuro: #8A8A8A;
+  --font-family: 'Reem Kufi', Arial, Helvetica, sans-serif;
+  --background-gray: #ecedf1;
+  --accent-gray: #A1A1A1;
+  --accent-gray-light: #D9D9D9;
+  --dark-gray: #3f3f3f;
+  --chat-green-color: #4DBE51;
+}
+
+
+*, *:before, *:after {
+  box-sizing:border-box;
+  font-family: var( --font-family);
+}
+
+.greenButton{
+  background-color: var(--mainColor);
+  padding: 0.8rem 1.8rem;
+  margin-top: 0.75rem;
+  color: white;
+  transition: background-color 0.3s;
+  border-radius: 1rem;
+}
+
+.greenButton:hover{
+  background-color: var(--mainColorLighten);
+}
+
+.greenButton:active{
+  background-color: var(--mainColorLighter);
+}
+
+@theme {
+  --animate-blinkGreen: blinkGreen 2.5s ease-in-out infinite;
+  @keyframes blinkGreen {
+    0%,
+    100% {
+      background-color: var(--mainColor); 
+    }
+    50% {
+      background-color: white;
+    }
+  }
+
+  @keyframes blinkGray {
+    0%,
+    100% {
+      background-color: var(--accent-gray-light); 
+    }
+    50% {
+      background-color: var( --accent-gray);
+    }
+  }
+}

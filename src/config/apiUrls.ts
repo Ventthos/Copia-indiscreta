@@ -1,0 +1,10 @@
+export const mainUrl = "http://localhost:3000/"
+
+export const ordersUrl = mainUrl + "orders/"
+export const operadoresUrl = mainUrl + "operadores/"
+export const camionesUrl = mainUrl + "camiones/"
+export const choferesUrl = mainUrl + "choferes/"
+export const serviciosUrl = mainUrl + "servicios/"
+export const chatUrl = mainUrl + "chats/"
+export const loginUrl = "https://rapidcolecta.saboria.me/api/auth/login"
+export const imagenesOrdenUrl = mainUrl + "imagenesOrden/"
